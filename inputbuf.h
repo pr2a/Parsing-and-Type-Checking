@@ -9,7 +9,6 @@
 #ifndef inputbuf_h
 #define inputbuf_h
 
-#include <stdio.h>
 #include <string>
 
 class InputBuffer {
