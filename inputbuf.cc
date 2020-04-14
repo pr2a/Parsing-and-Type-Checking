@@ -6,13 +6,13 @@
 //  Copyright © 2020 idk. All rights reserved.
 //
 
-#include "inputbuf.h"
-
 #include <iostream>
 #include <istream>
 #include <vector>
 #include <string>
 #include <cstdio>
+
+#include "inputbuf.h"
 
 using namespace std;
 
@@ -23,13 +23,13 @@ bool InputBuffer::EndOfInput(){
         return cin.eof();
 }
 
-bool InputBuffer::UngetChar(char c){
+char InputBuffer::UngetChar(char c){
     if(c != EOF)
         input_buffer.push_back(c);
     return c;
 }
 
-bool InputBuffer::GetChar(char &c){
+void InputBuffer::GetChar(char &c){
     if(!input_buffer.empty()){
         c = input_buffer.back();
         input_buffer.pop_back();
