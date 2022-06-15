@@ -1,7 +1,6 @@
 //
 //  lexer.h
-//  CSE340_Project4
-//
+
 //  Created by Priya Ganguly on 4/10/20.
 //  Copyright © 2020 idk. All rights reserved.
 //
